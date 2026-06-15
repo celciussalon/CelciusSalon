@@ -193,7 +193,10 @@
   }
   .btn-outline:hover { background: var(--gold); color: var(--black); }
   .hero-scroll {
-    position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+    position: absolute; 
+    bottom: 36px; 
+    left: 0;       /* Empezamos desde la izquierda */
+    width: 100%;   /* Ocupamos todo el ancho */
     display: flex; flex-direction: column; align-items: center; gap: 8px;
     opacity: 0; animation: fadeUp 0.8s 1.3s forwards;
     color: var(--text-muted); font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase;
@@ -432,13 +435,13 @@
 
 .promo-badge-float-grand {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
   background: #d4af37;
   color: #000;
-  padding: 10px 20px;
+  padding: 6px 12px;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 0.75rem;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
@@ -918,7 +921,7 @@
     box-shadow: 0 8px 32px rgba(254, 44, 85, 0.4); /* Efecto de luz fucsia al pasar el mouse */ 
   }
   .social-card--tk .social-action {
-    color: #fe2c55; /* Texto "SEGUIR ->" en el color rojo/fucsia de TikTok */
+    color: #ffffff; /* Texto "SEGUIR ->" en el color rojo/fucsia de TikTok */
   }
   .social-card--tk .social-handle {
     color: #69c9d0; /* El @usuario en color Cyan para darle contraste */
